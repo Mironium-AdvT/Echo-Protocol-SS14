@@ -149,11 +149,11 @@
     hasLampOnSpawn: LightTube
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -12 #PE-Tweak: - -15 -> -12
-    range: 5 #PE-Tweak: 2 -> 2.5
+    volume: -12 #PE-Tweak Было: - -15 -> Стало: -12
+    range: 5 #PE-Tweak Было: 2 -> Стало: 5
     sound:
-      path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak: /Audio/Ambience/Objects/light_hum.ogg -> /Audio/_ECHO/Ambience/Objects/light_hum.ogg
-      params: #PE-Tweak: Добавлены аудио параметры
+      path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+      params: #PE-Tweak Было: Стало: Добавлены аудио параметры
         variation: 0.5
   - type: DamageOnInteract
     damage:
@@ -186,11 +186,19 @@
   id: AlwaysPoweredLightLED
   suffix: Always Powered, LED
   components:
-  - type: PointLight
-    radius: 10
-    energy: 2.5
-    softness: 0.9
-    color: "#EEEEFF"
+  #PE-Tweak: Использование трубки вместо PointLight
+  # - type: PointLight
+  #   radius: 10
+  #   energy: 2.5
+  #   softness: 0.9
+  #   color: "#EEEEFF"
+  - type: PoweredLight
+    hasLampOnSpawn: ExteriorLightTube
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 4 # brighter light gets hotter
+    popupText: powered-light-component-burn-hand
 
 #Exterior lights
 - type: entity
@@ -258,10 +266,10 @@
   parent: AlwaysPoweredWallLight
   components:
     - type: AmbientSound
-      volume: -12 #PE-Tweak: - -15 -> -12
-      range: 5 #PE-Tweak: 2 -> 2.5
+      volume: -12 #PE-Tweak Было: -15 -> Стало: -12
+      range: 5 #PE-Tweak Было: 2 -> Стало: 2.5
       sound:
-        path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak: /Audio/Ambience/Objects/light_hum.ogg -> /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+        path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
         params: #PE-Tweak: Добавлены аудио параметры
           variation: 0.5
     - type: Sprite
