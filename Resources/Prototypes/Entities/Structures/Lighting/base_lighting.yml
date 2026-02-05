@@ -186,19 +186,11 @@
   id: AlwaysPoweredLightLED
   suffix: Always Powered, LED
   components:
-  #PE-Tweak: Использование трубки вместо PointLight
-  # - type: PointLight
-  #   radius: 10
-  #   energy: 2.5
-  #   softness: 0.9
-  #   color: "#EEEEFF"
-  - type: PoweredLight
-    hasLampOnSpawn: ExteriorLightTube
-  - type: DamageOnInteract
-    damage:
-      types:
-        Heat: 4 # brighter light gets hotter
-    popupText: powered-light-component-burn-hand
+  - type: PointLight
+    radius: 9 #PE-Tweak Было: 10 -> Стало: 9
+    energy: 0.75 #PE-Tweak Было: 2.5 -> Стало: 0.75
+    softness: 0.9
+    color: "#FAF6DF" #PE-Tweak Было: EEEEFF -> Стало: FAF6DF
 
 #Exterior lights
 - type: entity
