@@ -149,10 +149,12 @@
     hasLampOnSpawn: LightTube
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -15
-    range: 2.5 #PE-Tweak Было: 2 -> Стало: 2.5
+    volume: -12 #PE-Tweak: - -15 -> -12
+    range: 5 #PE-Tweak: 2 -> 2.5
     sound:
-      path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+      path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak: /Audio/Ambience/Objects/light_hum.ogg -> /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+      params: #PE-Tweak: Добавлены аудио параметры
+        variation: 0.5
   - type: DamageOnInteract
     damage:
       types:
@@ -256,10 +258,12 @@
   parent: AlwaysPoweredWallLight
   components:
     - type: AmbientSound
-      volume: -15
-      range: 2
+      volume: -12 #PE-Tweak: - -15 -> -12
+      range: 5 #PE-Tweak: 2 -> 2.5
       sound:
-        path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak Было: /Audio/Ambience/Objects/light_hum.ogg -> Стало: /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+        path: /Audio/_ECHO/Ambience/Objects/light_hum.ogg #PE-Tweak: /Audio/Ambience/Objects/light_hum.ogg -> /Audio/_ECHO/Ambience/Objects/light_hum.ogg
+        params: #PE-Tweak: Добавлены аудио параметры
+          variation: 0.5
     - type: Sprite
       sprite: Structures/Wallmounts/Lighting/light_small.rsi
       state: base
