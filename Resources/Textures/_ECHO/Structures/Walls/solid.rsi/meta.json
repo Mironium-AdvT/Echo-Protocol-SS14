@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "wall_girder and reinforced_wall_girder taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d90c7e5de6f6d94596c164da78dbc8d3cd35bb99 and modified, all other sprites taken from TauCetiClassic at commit https://github.com/volas/TauCetiClassic/commit/f6ed0ed39c9b7dec5e4f0099bea545b06391e43b and modified by mironium_adt",
+  "copyright": "wall_girder and reinforced_wall_girder taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d90c7e5de6f6d94596c164da78dbc8d3cd35bb99 and modified, all other sprites taken from TauCeti at commit https://github.com/volas/TauCetiClassic/commit/f6ed0ed39c9b7dec5e4f0099bea545b06391e43b and modified by mironium_adt",
   "size": {
     "x": 32,
     "y": 32
